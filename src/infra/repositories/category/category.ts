@@ -1,5 +1,6 @@
 import { CategoryDTO, ICategoryRepository } from "../../../types/category/category";
-import Category from "../../schema"; // Certifique-se de importar a interface correta
+import Category from "../../schemas/category";
+
 
 export class CategoryRepository implements ICategoryRepository {
   async insert(category: CategoryDTO): Promise<void> {

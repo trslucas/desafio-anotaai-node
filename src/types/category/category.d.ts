@@ -8,7 +8,7 @@ export interface CategoryDTO {
 
 export interface ICategoryRepository {
   findAll(): Promise<CategoryDTO[]>
-  insert(category: Category): Promise<void>
+  insert(category: CategoryDTO): Promise<void>
   findById(id: string): Promise<CategoryDTO | null>
   insert(category: CategoryDTO): Promise<void>
   editCategory(id: string, newCategoryData: CategoryDTO): Promise<void>

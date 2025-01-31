@@ -1,5 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
-import CategoryEntitiy from "./domain/category";
+import CategoryEntitiy from "../domain/category";
+import ProductEntity from "../domain/product";
 
 
 
@@ -19,3 +20,4 @@ const CategorySchema = new Schema<ICategory>(
 const Category = mongoose.model<ICategory>("Category", CategorySchema);
 
 export default Category;
+
