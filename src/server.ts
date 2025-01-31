@@ -8,20 +8,18 @@ const app = express();
 
 const PORT = 3000;
 
-// Middleware para interpretar JSON
 app.use(express.json());
 
-// Configuração de banco de dados
+
 connectToDatabase();
 
 const categoryRepository = new CategoryRepository();
 const categoryService = new CategoryService(categoryRepository);
 const categoryController = new CategoryController(categoryService);
 
-// Rotas
 app.use("/categories", categoryController.router);
 
-// Inicialização do servidor
+
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
 });
