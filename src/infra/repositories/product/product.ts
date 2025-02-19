@@ -1,4 +1,5 @@
 
+// biome-ignore lint/style/useImportType: <explanation>
 import { IProductRepository, ProductDTO } from "../../../types/category/product";
 import Product from "../../schemas/product";
 

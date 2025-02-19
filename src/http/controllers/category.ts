@@ -1,5 +1,7 @@
 import { randomUUID } from "node:crypto";
+// biome-ignore lint/style/useImportType: <explanation>
 import CategoryService from "../../core/services/category";
+// biome-ignore lint/style/useImportType: <explanation>
 import { Router, Request, NextFunction, Response } from "express";
 
 export default class CategoryContoller {

@@ -1,4 +1,6 @@
+// biome-ignore lint/style/useImportType: <explanation>
 import { CategoryRepository } from "../../infra/repositories/category/category";
+// biome-ignore lint/style/useImportType: <explanation>
 import {  CategoryDTO, ICategoryService } from "../../types/category/category";
 
 export default class CategoryService implements ICategoryService {
